@@ -20,14 +20,16 @@ public class Main {
             }
             else if(x == 2){
                 int b = sc.nextInt();
+                int idx = 0; // 못 찾았을 때를 대비해 기본값을 0으로 설정
+                
                 for(int j=0; j<n; j++){
-                    if(arr[j]==b){
-                        System.out.println(j+1);
-                        break;
+                    if(arr[j] == b){
+                        idx = j + 1; // 찾으면 위치(index + 1) 저장
+                        break;       // 가장 먼저 나오는 것을 찾아야 하므로 찾자마자 중단
                     }
-                    if(arr[n-1]!=b)
-                        System.out.println("0");
                 }
+                // 찾았으면 위치가, 못 찾았으면 초기값 0이 출력됨
+                System.out.println(idx);
             }
             else if(x == 3){
                 int s = sc.nextInt();
