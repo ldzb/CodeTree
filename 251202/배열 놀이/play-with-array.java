@@ -25,9 +25,11 @@ public class Main {
                         System.out.println(j+1);
                         break;
                     }
+                    if(arr[n-1]!=b)
+                        System.out.println("0");
                 }
             }
-            else{
+            else if(x == 3){
                 int s = sc.nextInt();
                 int e = sc.nextInt();
                 for(int j=(s-1); j<e; j++){
