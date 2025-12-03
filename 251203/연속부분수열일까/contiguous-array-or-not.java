@@ -12,8 +12,8 @@ public class Main {
             arr[i]=sc.nextInt();
         for(int i=0; i<b; i++)
             brr[i]=sc.nextInt();
-        int cntA=0;
-        int cntB=0;
+        int cntA=-1;
+        int cntB=-1;
         int cntC=0;
 
         for(int i=0; i<a; i++){
