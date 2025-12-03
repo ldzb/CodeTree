@@ -16,7 +16,7 @@ public class Main {
         int cntB=-1;
         int cntC=0;
 
-        for(int i=0; i<a; i++){
+        for(int i=0; i<a-b; i++){
             for(int j=0; j<b; j++){
                 if(arr[i]==brr[j]){
                     cntA=i;
@@ -25,7 +25,7 @@ public class Main {
                 }
             }
         }
-        for(int i=0;i<=cntB; i++){
+        for(int i=0;i<b; i++){
             if(arr[cntA+i]==brr[i])
                 cntC++;
         }
