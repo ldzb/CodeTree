@@ -25,7 +25,7 @@ public class Main {
                 }
             }
         }
-        for(int i=0;i<cntB; i++){
+        for(int i=0;i<=cntB; i++){
             if(arr[cntA+i]==brr[i])
                 cntC++;
         }
